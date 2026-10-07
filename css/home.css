@@ -1,0 +1,37 @@
+body{font-family:'Bricolage Grotesque',system-ui,sans-serif;background:#161616;color:#fff;display:flex;flex-direction:column;height:100vh;height:100dvh}
+.brand{padding:28px clamp(20px,4vw,56px) 20px;display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.brand h1{margin:0;font-weight:800;font-size:clamp(2.2rem,5.5vw,4.6rem);line-height:.92;letter-spacing:-.03em}
+.brand p{margin:0;font-weight:300;font-size:1rem;line-height:1.4;opacity:.8;max-width:22ch}
+
+.doors{flex:1;display:flex;min-height:0}
+.door{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:14px;padding:clamp(20px,3vw,44px);text-decoration:none;position:relative;overflow:hidden;transition:flex-grow .6s cubic-bezier(.2,.8,.2,1)}
+.door-title{font-weight:800;font-size:clamp(1.7rem,3.2vw,3.2rem);line-height:1;letter-spacing:-.02em}
+.door-text{max-width:30ch;font-size:1rem;line-height:1.45;font-weight:300;opacity:0;transform:translateY(8px);transition:opacity .4s .1s,transform .4s .1s}
+.door-go{font-weight:500;border-bottom:2px solid currentColor;align-self:flex-start;padding-bottom:2px;opacity:0;transition:opacity .4s .15s}
+.doors:hover .door,.doors:focus-within .door{flex-grow:.8}
+.door:hover,.door:focus-visible{flex-grow:2.4!important}
+.door:hover .door-text,.door:hover .door-go,.door:focus-visible .door-text,.door:focus-visible .door-go{opacity:1;transform:none}
+
+/* cada puerta anticipa el diseño de su página */
+.door-at{background:#cfe3dc;color:#173b3a}
+.door-at .door-title{font-weight:500;letter-spacing:-.01em}
+.door-at::before{content:"";position:absolute;right:-20%;top:-10%;width:70%;aspect-ratio:1;border-radius:50%;background:#e8f1ec;opacity:.8}
+.door-mk{background:#8e1b52;color:#ffe6ef}
+.door-mk::before{content:"";position:absolute;right:-15%;top:12%;width:60%;aspect-ratio:1;border-radius:50% 50% 0 50%;background:#e0568d;opacity:.5;transform:rotate(-20deg)}
+.door-md{background:#f2f2ee;color:#0a0a0a}
+.door-md .door-title{text-transform:none;font-weight:300;font-size:clamp(1.7rem,3.4vw,3.4rem);letter-spacing:-.04em}
+.door-md::before{content:"";position:absolute;left:clamp(20px,3vw,44px);right:clamp(20px,3vw,44px);top:0;height:6px;background:#0a0a0a}
+.door>*{position:relative}
+
+.foot{display:flex;gap:24px;padding:14px clamp(20px,4vw,56px);font-size:.9rem}
+.foot a{text-decoration:none;opacity:.75}
+.foot a:hover{opacity:1;text-decoration:underline}
+
+@media (max-width:760px){
+  body{height:auto;min-height:100vh}
+  .doors{flex-direction:column}
+  .door{min-height:220px;flex:none}
+  .door-text,.door-go{opacity:1;transform:none}
+  .doors:hover .door,.door:hover{flex-grow:0!important}
+}
+@media (hover:none){.door-text,.door-go{opacity:1;transform:none}}
