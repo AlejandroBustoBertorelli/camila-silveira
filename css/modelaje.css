@@ -36,3 +36,9 @@ dd{margin:0;font-size:1.8rem;font-weight:600;font-stretch:80%}
   .hero{grid-template-columns:1fr}.hero h1{grid-column:1}.hero-img{grid-column:1;grid-row:2;margin-top:12px}.role{grid-row:3;margin-top:12px}
   .contact{grid-template-columns:1fr}
 }
+
+.philo{padding:clamp(40px,6vw,88px) clamp(20px,4vw,48px);border-top:2px solid var(--ink)}
+.philo p{max-width:62ch;font-size:1.2rem;margin:0 0 16px}
+.credits{margin-top:40px;max-width:70ch}
+.credits h3{margin:20px 0 4px;font-size:1.2rem;font-weight:600}
+.credits p{margin:0;color:var(--grey)}
