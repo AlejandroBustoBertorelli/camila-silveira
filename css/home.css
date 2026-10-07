@@ -19,7 +19,6 @@ body{font-family:'Bricolage Grotesque',system-ui,sans-serif;background:#0a0a0a;c
 .door-mk::before{content:"";position:absolute;right:-15%;top:12%;width:60%;aspect-ratio:1;border-radius:50% 50% 0 50%;background:#e0568d;opacity:.5;transform:rotate(-20deg)}
 .door-md{background:#fff1f5;color:#0a0a0a}
 .door-md .door-title{text-transform:none;font-weight:300;font-size:clamp(1.7rem,3.4vw,3.4rem);letter-spacing:-.04em}
-.door-md::before{content:"";position:absolute;left:clamp(20px,3vw,44px);right:clamp(20px,3vw,44px);top:0;height:6px;background:#0a0a0a}
 .door>*{position:relative}
 
 .foot{display:flex;gap:24px;padding:14px clamp(20px,4vw,56px);font-size:.9rem}
