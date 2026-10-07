@@ -1,7 +1,6 @@
 body{font-family:'Bricolage Grotesque',system-ui,sans-serif;background:#0a0a0a;color:#fff;display:flex;flex-direction:column;height:100vh;height:100dvh}
 .brand{padding:28px clamp(20px,4vw,56px) 20px;display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
 .brand h1{margin:0;font-weight:800;font-size:clamp(2.2rem,5.5vw,4.6rem);line-height:.92;letter-spacing:-.03em}
-.brand p{margin:0;font-weight:300;font-size:1rem;line-height:1.4;opacity:.8;max-width:22ch}
 
 .doors{flex:1;display:flex;min-height:0}
 .door{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:14px;padding:clamp(20px,3vw,44px);text-decoration:none;position:relative;overflow:hidden;transition:flex-grow .6s cubic-bezier(.2,.8,.2,1)}
