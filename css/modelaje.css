@@ -1,4 +1,4 @@
-:root{--ink:#0a0a0a;--paper:#fff0f4;--grey:#a8607c}
+:root{--ink:#3a1226;--paper:#fff0f4;--grey:#a8607c}
 body{background:var(--paper);color:var(--ink);font-family:'Archivo',system-ui,sans-serif;font-stretch:100%;line-height:1.5}
 h1,h2{margin:0;font-weight:800;font-stretch:62%;text-transform:uppercase;line-height:.88;letter-spacing:-.01em}
 .top{display:flex;justify-content:space-between;padding:20px clamp(20px,4vw,48px);font-weight:500;font-size:.95rem}
@@ -28,7 +28,7 @@ dd{margin:0;font-size:1.8rem;font-weight:600;font-stretch:80%}
 .contact{background:var(--ink);color:var(--paper);display:grid;grid-template-columns:1fr 1fr;gap:32px;padding:clamp(48px,8vw,112px) clamp(20px,4vw,48px)}
 .contact h2{margin:0;font-size:clamp(3rem,9vw,8rem)}
 .contact p{margin:0 0 16px;font-size:1.2rem}
-.contact a{display:block;font-size:1.5rem;font-weight:500;text-decoration:none;padding:8px 0;border-bottom:1px solid #444}
+.contact a{display:block;font-size:1.5rem;font-weight:500;text-decoration:none;padding:8px 0;border-bottom:1px solid #7a3a58}
 .contact a:hover{padding-left:12px}
 .foot{padding:20px clamp(20px,4vw,48px);background:var(--ink);color:var(--grey);font-size:.9rem}
 
