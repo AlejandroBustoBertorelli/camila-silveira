@@ -66,3 +66,14 @@ img.hero-img{max-height:70vh}
 .nav:hover{background:#d6336c}
 .prev{left:-14px}.next{right:-14px}
 @media (max-width:760px){.nav{width:42px;height:42px}.prev{left:4px}.next{right:4px}img.ph{max-height:50vh}}
+
+/* flechas ocultas en los extremos y ampliación */
+.nav[hidden]{display:none}
+img.zoom{cursor:zoom-in}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(20,5,12,.92);display:grid;place-items:center;padding:24px}
+.lb[hidden]{display:none}
+.lb img{max-width:min(92vw,1100px);max-height:90vh;width:auto;height:auto;object-fit:contain;display:block}
+.lb .nav{position:fixed}
+.lb-prev{left:16px}.lb-next{right:16px}
+.lb-close{position:fixed;top:14px;right:16px;width:46px;height:46px;border-radius:50%;border:0;background:#fff;color:#3a1226;font-size:1.8rem;line-height:1;cursor:pointer}
+img.hero-img.zoom,img.ph.zoom{cursor:zoom-in}
