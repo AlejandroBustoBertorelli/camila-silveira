@@ -33,3 +33,18 @@ body{font-family:'Bricolage Grotesque',system-ui,sans-serif;background:#0a0a0a;c
   .doors:hover .door,.door:hover{flex-grow:0!important}
 }
 @media (hover:none){.door-text,.door-go{opacity:1;transform:none}}
+
+/* collage de fotos en el panel de modelaje */
+.door>.collage{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(4,1fr);gap:4px;background:#fff1f5}
+.collage img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;transition:transform .6s}
+.door-md:hover .collage img{transform:scale(1.04)}
+.collage .ta{grid-column:1;grid-row:1/3}
+.collage .tb{grid-column:2;grid-row:1}
+.collage .tc{grid-column:3;grid-row:1/4}
+.collage .td{grid-column:2;grid-row:2/4}
+.collage .te{grid-column:1;grid-row:3}
+.collage .tf{grid-column:1/3;grid-row:4}
+.collage .tg{grid-column:3;grid-row:4}
+.door-md::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,#fff1f5 18%,rgba(255,241,245,.55) 38%,transparent 62%)}
+.door-md>.door-title,.door-md>.door-text,.door-md>.door-go{z-index:2}
+@media (max-width:760px){.door-md{min-height:380px}}
