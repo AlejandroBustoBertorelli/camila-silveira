@@ -55,3 +55,14 @@ img.ph{flex:0 0 auto;width:auto;height:clamp(300px,52vh,460px);aspect-ratio:3/4;
   img.hero-img{max-width:100%;justify-self:stretch;max-height:70vh}
   img.ph{height:clamp(260px,46vh,380px)}
 }
+
+/* carrusel con botones */
+.carousel{position:relative}
+.strip{scrollbar-width:none;overflow-x:auto;scroll-behavior:smooth}
+.strip::-webkit-scrollbar{display:none}
+img.ph{height:clamp(240px,56vh,520px);max-height:56vh}
+img.hero-img{max-height:70vh}
+.nav{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:52px;height:52px;border-radius:50%;border:0;background:var(--ink);color:#fff;font-size:1.5rem;cursor:pointer;display:grid;place-items:center;transition:background .2s}
+.nav:hover{background:#d6336c}
+.prev{left:-14px}.next{right:-14px}
+@media (max-width:760px){.nav{width:42px;height:42px}.prev{left:4px}.next{right:4px}img.ph{max-height:50vh}}
