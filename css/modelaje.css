@@ -46,3 +46,12 @@ dd{margin:0;font-size:1.8rem;font-weight:600;font-stretch:80%}
 img.hero-img{object-fit:cover;width:100%;height:auto;background:none}
 img.ph{object-fit:cover;display:block;padding:0}
 img.ph:hover{opacity:.9}
+
+/* tamaños de foto */
+img.hero-img{width:100%;max-width:460px;justify-self:end;aspect-ratio:3/4;height:auto;max-height:78vh;object-fit:cover;object-position:center top}
+.strip{align-items:flex-start}
+img.ph{flex:0 0 auto;width:auto;height:clamp(300px,52vh,460px);aspect-ratio:3/4;object-fit:cover;object-position:center top}
+@media (max-width:760px){
+  img.hero-img{max-width:100%;justify-self:stretch;max-height:70vh}
+  img.ph{height:clamp(260px,46vh,380px)}
+}
